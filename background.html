@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Gradient Generator</title>
+    <link rel="stylesheet" href="background.css">
+    <script defer src="background.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Background Gradient Generator</h1>
+        <div class="controls">
+            <label for="color1">Select First Color:</label>
+            <input type="color" id="color1" value="#ff0000">
+            
+            <label for="color2">Select Second Color:</label>
+            <input type="color" id="color2" value="#0000ff">
+            
+            <label for="gradientType">Select Gradient Type:</label>
+            <select id="gradientType">
+                <option value="linear">Linear</option>
+                <option value="radial">Radial</option>
+            </select>
+            
+            <label for="angle">Select Angle (for linear gradient):</label>
+            <input type="range" id="angle" min="0" max="360" value="90">
+            <span id="angleValue">90°</span>
+        </div>
+        
+        <div id="preview" class="preview">
+            <h2>Background Preview</h2>
+        </div>
+    </div>
+
+    <script src="background.js"></script>
+</body>
+</html>
